@@ -1,1 +1,33 @@
-<p>by-capital-page works!</p>,
+<section class="flex flex-row gap-2 mt-2">
+  <input
+   type="text"
+   class="input input-bordered mr-2 w-56"
+   placeholder="Buscar por capital"
+   autofocus
+   #txtSearch
+   (keyup.enter)="onSearch(txtSearch.value)"
+   >
+  <button (click)="onSearch(txtSearch.value)" class="btn btn-primary">
+    Buscar
+  </button>
+</section>
+
+<section class="mt-5">
+  <table class="table table-md mt-2 w-full">
+
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Ícono</th>
+          <th>Bandera</th>
+          <th>Nombre</th>
+          <th>Capital</th>
+          <th>Población</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr></tr>
+      </tbody>
+  </table>
+</section>
