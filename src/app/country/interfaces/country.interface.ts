@@ -1,5 +1,7 @@
 
 export interface Country {
+  // Iniciales
+  
   cca2: string;
   flag: string;
   flagSvg: string;
@@ -7,4 +9,7 @@ export interface Country {
   capital: string;
   population: number;
 
+  // Agregadas
+  region: string;
+  subRegion: string;
 }
